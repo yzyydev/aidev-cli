@@ -2,6 +2,7 @@
 
 import { Command } from 'commander';
 import { initCommand } from './commands/init.js';
+import { claudeCommand } from './commands/claude.js';
 
 const program = new Command();
 
@@ -14,5 +15,10 @@ program
   .command('init')
   .description('Initialize AI development structure in current directory')
   .action(initCommand);
+
+program
+  .command('claude')
+  .description('Start Claude Code, installing if necessary')
+  .action(claudeCommand);
 
 program.parse();

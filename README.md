@@ -65,6 +65,14 @@ aidev --version
 aidev init
 ```
 
+### Start Claude Code
+
+If the Claude Code CLI is missing, this command installs it globally and then launches the `claude` CLI:
+
+```bash
+aidev claude
+```
+
 ## Project Structure
 
 The `aidev init` command creates a standardized AI development structure:
