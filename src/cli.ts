@@ -8,7 +8,7 @@ const program = new Command();
 program
   .name('aidev')
   .description('CLI tool to create AI development project boilerplate structure')
-  .version('1.0.0');
+  .version('0.1.0');
 
 program
   .command('init')
