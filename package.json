@@ -1,0 +1,36 @@
+{
+  "name": "aidev",
+  "version": "1.0.0",
+  "description": "CLI tool to create AI development project boilerplate structure",
+  "main": "dist/cli.js",
+  "bin": {
+    "aidev": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/cli.js",
+    "test": "npm run build && node dist/cli.js init"
+  },
+  "keywords": [
+    "cli",
+    "ai",
+    "development",
+    "boilerplate",
+    "project-structure"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/inquirer": "^9.0.8",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "commander": "^11.0.0",
+    "fs-extra": "^11.0.0",
+    "inquirer": "^9.0.0"
+  }
+}
